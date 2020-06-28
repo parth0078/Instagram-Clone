@@ -147,11 +147,17 @@ class _InstagramHomeScreenState extends State<InstagramHomeScreen> {
                         SizedBox(
                           width: 8.0,
                         ),
-                        Flexible(
-                          child: Text(
-                            "Akshay Kumar  Hamari duniya 71% paani se bani hai lekin uss mein se sirf 2.5% hai fresh pani . yani",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
+                        Expanded(
+                          child: RichText(text: TextSpan(
+                            text: "Akshay kumar  ",
+                            style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
+                            children: [
+                              TextSpan(
+                                text: "Hamari duniya 71% paani se bani hai lekin uss mein se sirf 2.5% hai fresh pani . yani",
+                                style: TextStyle(color: Colors.black,fontWeight: FontWeight.normal)
+                              )
+                            ]
+                          )),
                         ),
                         SizedBox(
                           width: 4.0,
